@@ -17,11 +17,19 @@ else
     export PATH="$HOME/bin:$PATH"
 fi
 
+# anadir dotnet/tools al PATH (.NET)
+if [ -d "$HOME/.dotnet/tools" ]; then
+    export PATH="$HOME/.dotnet/tools:$PATH"
+fi
+
+# Desactivar telemetria dotnet
+which dotnet && export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
 # archivo original de /etc/X11/xinit/xinitrx
 # recordad cambiar permisos, dueno y grupo (chmod, chown, chgrp)
 
 # Tipo de teclado
-setxkbmap es & # Español
+# setxkbmap es & # Español
 
 # nvidia driver tearing
 nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceCompositionPipeline = On }" &
@@ -45,7 +53,7 @@ nm-applet &
 flameshot &
 
 # numlock
-numlockx &
+# numlockx &
 
 # volume icon
 # volumeicon &

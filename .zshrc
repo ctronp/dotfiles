@@ -141,17 +141,39 @@ unset __conda_setup
 
 # Comandos Customs
 alias please="sudo"
+alias spac="sudo pacman -S --needed"
 alias gita="git add"
 alias gitm="git commit -m"
 alias gitp="git push"
 alias gitd="git diff"
 alias gits="git status"
 alias untar="tar -zxvf"
+#alias unziph="unzip arg[0] -d ."
 alias uptall="$HOME/bin/updateall"
 alias open="xdg-open"
 
+# Triplete git
+# recordar crear funcion git add . gitm "arg" git push en un solo comando
+
+# dotnet autocompletado
+# zsh parameter completion for the dotnet CLI
+
+_dotnet_zsh_complete()
+{
+  local completions=("$(dotnet complete "$words")")
+
+  reply=( "${(ps:\n:)completions}" )
+}
+
+compctl -K _dotnet_zsh_complete dotnet
+
 # obinskit (teclado)
-alias obinskit="$HOME/obinskit/obinskit"
+alias obinskit="sudo $(echo $HOME/obinskit/obinskit) --no-sandbox"
 
 # colores tmux (256)
 alias tmux="TERM=xterm-256color tmux"
+
+# autostart tmux
+if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ]; then
+  [ -z "${TMUX}" ] && { tmux attach || tmux; } >/dev/null 2>&1
+fi

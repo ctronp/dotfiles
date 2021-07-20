@@ -13,12 +13,9 @@
   "editor.fontLigatures": true,
   "workbench.colorTheme": "Material Deep Ocean",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
   "latex-workshop.view.pdf.viewer": "tab",
   "explorer.confirmDelete": false,
   "editor.rulers": [
@@ -31,5 +28,7 @@
   "explorer.confirmDragAndDrop": false,
   "[latex]": {
     "editor.defaultFormatter": "nickfode.latex-formatter"
-  }
+  },
+  "redhat.telemetry.enabled": true,
+  "window.zoomLevel": 1
 }

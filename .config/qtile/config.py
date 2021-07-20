@@ -69,6 +69,8 @@ keys = [
     # Reiniciar Qtile, Ejecutar comando
     Key([mod, ctrl], "r", lazy.restart(), desc="Reiniciar qtile"),
     
+    # Flip Layout
+    Key([mod], "t", lazy.flip()),
     
     # Explorador de archivos
     Key([mod], "e", lazy.spawn("pcmanfm-qt")),

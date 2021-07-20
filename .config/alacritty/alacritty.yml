@@ -1,5 +1,12 @@
 background_opacity: 0.97
 
+shell:
+  program: /bin/zsh
+
+dynamic_title: true
+
+gtk_theme_variant: dark
+
 font:
   bold:
     family: UbuntuMono Nerd Font
@@ -16,8 +23,14 @@ window:
 
 cursor:
   style: Beam
+  blinking: Off
   unfocused_hollow: false
   thickness: 0.27
+  vi_mode_style:
+    style: Beam
+    blinking: Off
+    unfocuse_hollow: false
+    thickness: 0.27
 
 
 custom_cursor_color: true
