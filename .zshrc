@@ -177,3 +177,5 @@ alias tmux="TERM=xterm-256color tmux"
 if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ]; then
   [ -z "${TMUX}" ] && { tmux attach || tmux; } >/dev/null 2>&1
 fi
+
+export PATH="$HOME/.poetry/bin:$PATH"
