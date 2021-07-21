@@ -11,6 +11,8 @@ fi
 
 which conda && $HOME/miniconda3/bin/conda update --all && $HOME/miniconda3/bin/conda update conda
 
+which poetry && poetry self update
+
 which yay && yay -Sy && yay -Syu
 
 # sudo updates
