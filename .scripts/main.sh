@@ -20,7 +20,8 @@ ttf-croscore ttf-fira-code gnu-free-fonts noto-fonts noto-fonts-emoji noto-fonts
 xorg-server lightdm lightdm-gtk-greeter lightdm-webkit2-greeter xorg-xinit xorg-xrandr git firefox \ 
 xdg-utils arandr zip unzip exa ranger flameshot ripgrep fzf fd prettier imagemagick rofi pipewire-alsa \ 
 pipewire pipewire-pulse pavucontrol notification-daemon okular calibre poppler notepadqq chromium qtile kmix feh picom \ 
-pipewire-jack network-manager-applet libnotify nano-syntax-highlighting breeze gnome-themes-extra rsync
+pipewire-jack network-manager-applet libnotify nano-syntax-highlighting breeze gnome-themes-extra rsync \
+oxygen oxygen-icons qt6-base
 
 sudo pacman -S --needed nvidia lib32-nvidia-utils nvidia-settings cuda cudnn htop neofetch neovim flac
 
