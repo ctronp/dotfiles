@@ -18,7 +18,7 @@ from libqtile.widget.textbox import TextBox
 # autostart
 @hook.subscribe.startup_once
 def autostart():
-    subprocess.call([path.join(path.expanduser(r'~'),'.config' ,'qtile' , 'autostart.sh')])
+    subprocess.call([path.join(path.dirname(__file__), 'autostart.sh')])
 
 
 mod,shift,ctrl = "mod4","shift","control"
