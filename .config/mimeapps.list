@@ -26,6 +26,13 @@ x-scheme-handler/webcal=firefox.desktop
 # Texto Plano
 text/plain=notepadqq.desktop
 
+# Codigo
+
+## C++
+text/x-c++hdr=notepadqq.desktop
+text/x-c++src=notepadqq.desktop
+text/x-objc++src=notepadqq.desktop
+
 # Image
 image/jpeg=feh.desktop
 image/png=feh.desktop
