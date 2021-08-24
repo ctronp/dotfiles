@@ -1,4 +1,6 @@
-# Instalacion de ZSH
+# ZSH
+
+## Instalacion
 
 1. bajar zsh: ``` sudo apt install zsh```
 2. configurar terminal: ```chsh```
@@ -14,3 +16,22 @@
 8. (opcional) ejecutar ```zimfw update```
 9. instalar ripgrep: ```sudo apt install ripgrep```
 10. instalar exa desde su [pagina oficial](https://github.com/ogham/exa)
+
+## aliases
+
+```.zshrc```
+```
+alias please="sudo"
+alias sins="sudo apt install"
+alias suns="sudo apt remove"
+alias supt="sudo apt update"
+alias gita="git add"
+alias gitm="git commit -m"
+alias gitp="git push"
+alias gitpp="git pull"
+alias gitd="git diff"
+alias gits="git status"
+alias untar="tar -zxvf"
+alias untarb="tar -jxvf"
+alias open="zdg-open"
+```
