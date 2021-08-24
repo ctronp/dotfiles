@@ -1,6 +1,7 @@
 # ZSH
 
 ## Instalacion
+## borrar esta linea
 
 1. bajar zsh: ``` sudo apt install zsh```
 2. configurar terminal: ```chsh```
