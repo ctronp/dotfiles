@@ -33,5 +33,5 @@ alias gitd="git diff"
 alias gits="git status"
 alias untar="tar -zxvf"
 alias untarb="tar -jxvf"
-alias open="zdg-open"
+alias open="xdg-open"
 ```
