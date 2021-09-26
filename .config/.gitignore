@@ -1,0 +1,9 @@
+# Ignore Everything
+/*
+
+!.gitignore
+
+# Except:
+!alacritty
+!nano
+!plasma-workspace

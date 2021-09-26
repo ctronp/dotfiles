@@ -1,0 +1,32 @@
+# auto identacion
+set autoindent
+
+# tamano de tab
+set tabsize 4
+
+# uso de mouse
+set mouse
+
+# si una linea es mas larga del ancho continua en la siguiente
+set softwrap
+
+# numeros de lineas
+set linenumbers
+
+# convierte tabs a espacios
+set tabstospaces
+
+# color de numeros
+# set numbercolor  bold,italic,magenta,normal
+
+# color del titulo
+# set titlecolor bold,italic,cyan,normal
+
+# color del tecto de la zona help
+set functioncolor cyan,black
+
+# errorcolor
+set errorcolor cyan,normal
+
+# color de las combinaciones de teclas en la zona help
+# set keycolor bold,white,normal
