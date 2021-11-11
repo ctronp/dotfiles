@@ -5,6 +5,7 @@ alias supt="sudo pacman -Syu"
 alias supg="sudo pacman -Syyu"
 alias gita="git add"
 alias gita.="git add ."
+alias gita,="git add ." # Este es porque soy pendejo y no se escribir
 alias gitm="git commit -m"
 alias gitc="git clone"
 alias gitcc="git checkout"
