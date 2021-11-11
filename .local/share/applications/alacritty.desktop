@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Alacritty
-Comment=Alacritty Terminal
-Icon=/home/ctronp/github/alacritty/extra/logo/alacritty-term.svg
-Exec=/home/ctronp/github/alacritty/target/release/alacritty
-Terminal=false
