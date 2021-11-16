@@ -1,4 +1,0 @@
-[submodule "github/alacritty"]
-	path = github/alacritty
-	url = https://github.com/alacritty/alacritty.git
-	ignore = dirty
