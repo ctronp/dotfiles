@@ -40,3 +40,5 @@ colors:
   cursor:
     cursor: '#a151d3'
 
+window:
+  decorations: None
