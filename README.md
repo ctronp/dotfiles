@@ -6,7 +6,7 @@ dotfiles that i use in manjaro kde.
 
 ### git init
 
-```
+```bash
 git init
 ```
 
