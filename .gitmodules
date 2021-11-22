@@ -2,3 +2,11 @@
 	path = github/alacritty
 	url = https://github.com/alacritty/alacritty.git
 	ignore = dirty
+[submodule "github/nerd-fonts"]
+	path = github/nerd-fonts
+	url = https://github.com/ryanoasis/nerd-fonts.git
+	ignore = dirty
+[submodule "github/exa"]
+	path = github/exa
+	url = https://github.com/ogham/exa.git
+    ignore = dirty
