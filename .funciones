@@ -1,0 +1,17 @@
+#!/bin/bash
+
+mdmermaid(){
+    if [ $# -ne 2  ]; then
+        echo "Pasar 2 argumentos"
+        return 1
+    fi
+
+
+    to_eval="pandoc $1 --pdf-engine=xelatex -F mermaid-filter -o $2"
+
+    eval $to_eval
+    [[ -f mermaid-filter.err ]] && rm mermaid-filter.err
+    return 0
+}
+
+# "pandoc README.md --pdf-engine=xelatex -F mermaid-filter -o README.pdf"
