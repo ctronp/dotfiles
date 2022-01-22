@@ -5,7 +5,7 @@
 [submodule "github/exa"]
 	path = github/exa
 	url = https://github.com/ogham/exa.git
-    branch = master
+	branch = master
 [submodule "github/alacritty"]
 	path = github/alacritty
 	url = https://github.com/ctronp/alacritty.git
