@@ -19,6 +19,7 @@ alias gitph="git push heroku main"
 alias gitslc="git shortlog -s -n --all --no-merges"
 alias gitreset='git fetch origin && git reset --hard origin/main'
 alias gitresetmaster='git fetch origin && git reset --hard origin/master'
+alias gitpprecurse="git pull --recurse-submodules"
 alias untar="tar -zxvf"
 alias untarb="tar -jxvf"
 alias untarx="tar -Jxvf"
