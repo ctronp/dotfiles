@@ -6,3 +6,6 @@
 	path = github/exa
 	url = https://github.com/ogham/exa.git
     ignore = dirty
+[submodule "github/alacritty"]
+	path = github/alacritty
+	url = https://github.com/ctronp/alacritty.git
