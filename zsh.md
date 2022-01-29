@@ -13,6 +13,7 @@
 
     ```zsh
     eval "$(starship init zsh)"
+    ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
     source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
     source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -22,6 +23,15 @@
     . "$HOME/.aliases"
     . "$HOME/.flags"
     setopt autocd
+
+    bindkey "^[[1;5C" forward-word
+    bindkey "^[[1;5D" backward-word
+
+
+    HISTFILE=~/.histfile
+    HISTSIZE=2000
+    SAVEHIST=2000
+    setopt appendhistory
     ```
 
 9. actualizar e instalar exa, alacritty y nerdfonts.
