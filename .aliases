@@ -1,12 +1,13 @@
 #!/bin/bash
 
 ### Aliases Comunes
-
 alias please="sudo"
-alias sins="sudo pacman -Syu --needed"
-alias suns="sudo pacman -Rns"
-alias supt="sudo pacman -Syu"
-alias supg="sudo pacman -Syyu"
+alias poweroff="systemctl poweroff"
+alias reboot="systemctl reboot"
+alias sins="sudo zypper in"
+alias suns="sudo zypper un"
+alias supt="sudo zypper up"
+alias supg="sudo zypper ref && sudo zypper up"
 alias gita="git add"
 alias gita.="git add ."
 alias gita,="git add ." # Este es porque soy pendejo y no se escribir
