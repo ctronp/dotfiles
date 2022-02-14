@@ -4,10 +4,9 @@
 alias please="sudo"
 alias poweroff="systemctl poweroff"
 alias reboot="systemctl reboot"
-alias sins="sudo zypper in"
-alias suns="sudo zypper rm"
-alias supt="sudo zypper up"
-alias supg="sudo zypper ref && sudo zypper up"
+alias sins="sudo dnf in"
+alias suns="sudo dnf rm"
+alias supt="sudo dnf up"
 alias gita="git add"
 alias gita.="git add ."
 alias gita,="git add ." # Este es porque soy pendejo y no se escribir
