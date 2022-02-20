@@ -35,6 +35,7 @@ alias cupdate="cargo install-update -a"
 alias cil="cargo install --path ." # Cargo Install Local
 alias gomodu="go get -u && go mod tidy" # Update go modules
 alias gor="go run ."
+alias pdstart="podman system service --time=0 tcp:0.0.0.0:2979"
 
 ### From https://github.com/zimfw/exa/blob/master/init.zsh  ::  28/01/22
 if (( ${+commands[exa]} )); then
