@@ -1,0 +1,8 @@
+# ignore Everything
+/*
+
+# Except
+!.gitignore
+!functions
+!config.fish
+!conf.d
