@@ -1,6 +1,6 @@
-# Dotfiles manjaro KDE-plasma
+# Dotfiles Fedora
 
-dotfiles that i use in manjaro kde.
+dotfiles that i use in fedora.
 
 ## cloning
 
