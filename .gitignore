@@ -6,9 +6,11 @@
 # Except:
 !zsh.md
 !.config
+!disable-smt-cloud.sh
 !github
 !.aliases
 !.funciones
 !.login_path
 !.flags
+
 !README.md
