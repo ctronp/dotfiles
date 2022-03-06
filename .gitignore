@@ -12,5 +12,11 @@
 !.funciones
 !.login_path
 !.flags
-
 !README.md
+
+.local/**
+!.local
+!.local/share
+!.local/share/applications
+!.local/share/applications/Postman.desktop
+
