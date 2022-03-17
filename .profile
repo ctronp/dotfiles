@@ -1,3 +1,5 @@
 
 . "$HOME/.cargo/env"
-source /opt/intel/oneapi/setvars.sh
+
+# intel oneapi
+[ -f /opt/intel/oneapi/setvars.sh ] && source /opt/intel/oneapi/setvars.sh
