@@ -1,6 +1,6 @@
 # Dotfiles Fedora
 
-dotfiles that i use in fedora.
+dotfiles that I use in fedora.
 
 ## cloning
 
@@ -10,29 +10,13 @@ dotfiles that i use in fedora.
 git init
 ```
 
-#### if you are in master branch
+### git init; remote; and pull
 
 ```bash
+git init
 git checkout -b main
 bit branch -D master
-```
-
-### remote and pull
-
-```bash
-git init
-git remote add origin https://github.com/ctronp/dotfilesManjaro.git
+git remote add origin git@github.com:ctronp/dotfilesFedora.git
 git pull --recurse-submodules origin main
-git submodule update --recursive
-```
-
-else
-
-```bash
-git init
-git remote add origin https://github.com/ctronp/dotfilesManjaro.git
-git pull origin main
 git submodule update --init --recursive
 ```
-
-Ninguno de los comandos previos fue testeado. Xd.
