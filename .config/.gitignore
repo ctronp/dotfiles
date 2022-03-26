@@ -1,11 +1,10 @@
 # Ignore Everything
 /*
 
-!.gitignore
-
 # Except:
+
+!.gitignore
 !alacritty
 !nano
-!plasma-workspace
 !micro
 !fish
