@@ -1,4 +1,5 @@
 {
     "clipboard": "terminal",
+    "tabsize": 2,
     "tabstospaces": true
 }
