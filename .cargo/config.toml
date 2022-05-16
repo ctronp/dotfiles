@@ -1,5 +1,5 @@
 [build]
-jobs = 1
+# jobs = 1
 rustc = "rustc"
 
 [env]
@@ -18,3 +18,26 @@ CARGO_PROFILE_RELEASE_LTO = "true"
 CARGO_PROFILE_RELEASE_OVERFLOW_CHECK = "false"
 CARGO_PROFILE_RELEASE_OPT_LEVEL = "3"
 CARGO_PROFILE_RELEASE_PANIC = "abort"
+
+
+[profile.release]
+strip = true
+opt-level = 3
+debug = false
+split-debuginfo = "..."
+debug-assertions = false
+overflow-checks = false
+lto = true
+panic = "abort"
+incremental = false
+codegen-units = 1
+
+[profile.release.build-override]
+strip = true
+opt-level = 3
+debug = false
+split-debuginfo = "..."
+debug-assertions = false
+overflow-checks = false
+incremental = false
+codegen-units = 1
