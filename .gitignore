@@ -15,6 +15,7 @@
 !README.md
 !.profile
 !.env
+!.cargo
 
 .local/**
 !.local
