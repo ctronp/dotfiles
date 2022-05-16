@@ -1,5 +1,3 @@
-
-
 [build]
 jobs = 1
 rustc = "rustc"
