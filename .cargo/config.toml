@@ -1,11 +1,11 @@
 [build]
-# jobs = 1
 rustc = "rustc"
 
 [env]
-RUSTFLAGS = "-C opt-level=3 -C codegen-units=1 -C target-cpu=native -C linker-plugin-lto -C linker=clang -C link-arg=-fuse-ld=lld -C embed-bitcode=yes"
+RUSTFLAGS = "-C opt-level=3 -C codegen-units=1 -C target-cpu=native -C linker-plugin-lto -C linker=ld.lld -C link-arg=-fuse-ld=lld -C embed-bitcode=yes"
 CC = "clang -flto -O3 -march=native -mtune=native"
 CXX = "clang++ -flto -O3 -march=native -mtune=native"
+LD = "ld.lld"
 CFLAGS = "-O3 -flto -march=native"
 CXXFLAGS = "-O3 -flto -march=native"
 LDFLAGS = "-fuse-ld=lld"
