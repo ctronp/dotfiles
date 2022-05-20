@@ -15,8 +15,6 @@ git init
 
 ```bash
 git init
-git checkout -b main
-bit branch -D master
 git remote add origin git@github.com:ctronp/dotfilesFedora.git
 git pull --recurse-submodules origin main
 git submodule update --init --recursive
