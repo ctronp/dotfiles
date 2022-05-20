@@ -7,6 +7,7 @@ dotfiles that I use in fedora.
 ### git init
 
 ```bash
+git config --global init.defaultBranch main
 git init
 ```
 
