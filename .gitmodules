@@ -2,7 +2,9 @@
 	path = github/nerd-fonts
 	url = https://github.com/ryanoasis/nerd-fonts.git
 	branch = master
+	ignore = dirty
 [submodule "github/alacritty"]
 	path = github/alacritty
 	url = https://github.com/ctronp/alacritty.git
 	branch = master
+	ignore = dirty
