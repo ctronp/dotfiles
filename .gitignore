@@ -16,5 +16,6 @@
 !.profile
 !.env
 !.cargo
+!godot.sh
 !install.sh
 
