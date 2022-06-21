@@ -3,11 +3,19 @@ rustc = "rustc"
 incremental = false
 
 [target.x86_64-unknown-linux-gnu]
-rustflags = "-C opt-level=3 -C codegen-units=1 -C target-cpu=native -C linker-plugin-lto -C linker=ld.lld -C link-arg=-fuse-ld=lld -C embed-bitcode=yes"
-
+rustflags = [
+  '-Copt-level=3',
+  '-Ccodegen-units=1',
+  '-Ctarget-cpu=native',
+  '-Clinker-plugin-lto',
+  '-Clinker=ld.lld',
+  '-Clink-arg=-fuse-ld=lld',
+  '-Cembed-bitcode=yes',
+]
+linker = '/usr/bin/clang'
 
 [env]
-RUSTFLAGS = "-C opt-level=3 -C codegen-units=1 -C target-cpu=native -C linker-plugin-lto -C linker=ld.lld -C link-arg=-fuse-ld=lld -C embed-bitcode=yes"
+RUSTFLAGS = "-Copt-level=3 -Ccodegen-units=1 -Ctarget-cpu=native -Clinker-plugin-lto -Clinker=ld.lld -Clink-arg=-fuse-ld=lld -Cembed-bitcode=yes"
 CC = "clang -flto -O3 -march=native -mtune=native"
 CXX = "clang++ -flto -O3 -march=native -mtune=native"
 LD = "ld.lld"
@@ -23,11 +31,16 @@ CARGO_PROFILE_RELEASE_OVERFLOW_CHECK = "false"
 CARGO_PROFILE_RELEASE_OPT_LEVEL = "3"
 CARGO_PROFILE_RELEASE_PANIC = "abort"
 
+[profile.dev]
+opt-level = 0
+debug = 2
+incremental = true
+codegen-units = 512
 
 [profile.release]
 strip = true
 opt-level = 3
-debug = false
+debug = 0
 split-debuginfo = "..."
 debug-assertions = false
 overflow-checks = false
@@ -39,7 +52,7 @@ codegen-units = 1
 [profile.release.build-override]
 strip = true
 opt-level = 3
-debug = false
+debug = 0
 split-debuginfo = "..."
 debug-assertions = false
 overflow-checks = false
