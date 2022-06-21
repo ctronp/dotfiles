@@ -1,4 +1,5 @@
 [build]
+# rustc-wrapper = '/home/ctronp/.cargo/bin/sccache'
 rustc = "rustc"
 incremental = false
 
