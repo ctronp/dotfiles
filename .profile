@@ -1,7 +1,13 @@
 #!/bin/bash
 
-. "$HOME/.cargo/env"
 export PATH="$PATH:$HOME/bin"
+. "$HOME/.cargo/env"
 
 # intel oneapi
-[ -f /opt/intel/oneapi/setvars.sh ] && source /opt/intel/oneapi/setvars.sh
+if [ -f /opt/intel/oneapi/setvars.sh ];
+then
+    source /opt/intel/oneapi/setvars.sh
+fi
+
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
