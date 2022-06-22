@@ -8,3 +8,5 @@
 !nano
 !micro
 !fish
+!systemd
+!environment.d
