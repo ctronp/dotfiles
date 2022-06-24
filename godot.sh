@@ -2,6 +2,7 @@
 
 cd ~/godot
 
+set -xe
 
 printf "
 module_mono_enable = \"yes\"
