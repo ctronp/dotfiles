@@ -10,15 +10,14 @@ rustflags = [
   '-Ctarget-cpu=native',
   '-Clinker-plugin-lto',
   '-Clinker=ld.lld',
-  '-Clink-arg=-fuse-ld=lld',
   '-Cembed-bitcode=yes',
 ]
 linker = '/usr/bin/clang'
 
 [env]
-RUSTFLAGS = "-Copt-level=3 -Ccodegen-units=1 -Ctarget-cpu=native -Clinker-plugin-lto -Clinker=ld.lld -Clink-arg=-fuse-ld=lld -Cembed-bitcode=yes"
-CC = "clang -flto -O3 -march=native -mtune=native"
-CXX = "clang++ -flto -O3 -march=native -mtune=native"
+RUSTFLAGS = "-Copt-level=3 -Ccodegen-units=1 -Ctarget-cpu=native -Clinker-plugin-lto -Clinker=ld.lld -Cembed-bitcode=yes"
+CC = "clang -O3 -flto -ffat-lto-objects -march=native"
+CXX = "clang++ -O3 -flto -ffat-lto-objects -march=native"
 LD = "ld.lld"
 CFLAGS = "-O3 -flto -ffat-lto-objects -march=native"
 CXXFLAGS = "-O3 -flto -ffat-lto-objects -march=native"
