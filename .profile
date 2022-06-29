@@ -1,7 +1,10 @@
 #!/bin/bash
 
 export PATH="$PATH:$HOME/bin"
-. "$HOME/.cargo/env"
+if [ -f $HOME/.cargo/env ]
+then
+    . "$HOME/.cargo/env"
+fi
 
 # intel oneapi
 if [ -f /opt/intel/oneapi/setvars.sh ];
