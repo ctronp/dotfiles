@@ -15,7 +15,7 @@ fi
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
-# GIT GPG KEY
+# gpg tty
 export GPG_TTY=$(tty)
 
 # Added by Toolbox App
