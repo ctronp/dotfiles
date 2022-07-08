@@ -14,3 +14,7 @@ fi
 
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+
+
+# Added by Toolbox App
+export PATH="$PATH:/home/ctronp/.local/share/JetBrains/Toolbox/scripts"
