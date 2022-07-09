@@ -2,20 +2,19 @@
 /*
 
 !.gitignore
+!.gitmodules
 
 # Except:
-!zsh.md
+!.cargo
 !.config
-!disable-smt-cloud.sh
 !github
 !.aliases
+!.env
 !.funciones
 !.login_path
-!.flags
-!README.md
 !.profile
-!.env
-!.cargo
+!chrome_install.sh
+!disable-smt-cloud.sh
 !godot.sh
 !install.sh
-
+!README.md
