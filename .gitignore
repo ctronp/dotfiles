@@ -9,7 +9,6 @@
 !.config
 !github
 !.aliases
-!.funciones
 !.login_path
 !.profile
 !chrome_install.sh
