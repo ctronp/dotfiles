@@ -19,4 +19,4 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 export GPG_TTY=$(tty)
 
 # Added by Toolbox App
-export PATH="$PATH:/home/ctronp/.local/share/JetBrains/Toolbox/scripts"
+export PATH="$PATH:$HOME/.local/share/JetBrains/Toolbox/scripts"
