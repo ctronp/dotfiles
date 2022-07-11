@@ -8,3 +8,8 @@
 	url = https://github.com/ctronp/alacritty.git
 	branch = master
 	ignore = dirty
+[submodule "github/flutter"]
+	path = github/flutter
+	url = https://github.com/flutter/flutter.git
+    brandh = stable
+    ignore = dirty
