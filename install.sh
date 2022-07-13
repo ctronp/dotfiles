@@ -16,4 +16,5 @@ sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/clang++ 50
 sudo update-alternatives --config cc
 sudo update-alternatives --config c++
 
+sudo rm -rf /usr/bin/ld
 sudo ln -sf /usr/bin/ld.lld /usr/bin/ld
