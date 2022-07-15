@@ -3,7 +3,7 @@
 set -xe
 
 # minimal install packages
-sudo dnf install git clang lld
+sudo dnf install git clang lld xclip
 
 # replace gcc with clang and ld with lld
 sudo update-alternatives --install /usr/bin/cc cc /usr/bin/gcc 100
