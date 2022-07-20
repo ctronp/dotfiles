@@ -6,6 +6,8 @@ set -xe
 sudo dnf install git clang lld xclip
 
 # replace gcc with clang and ld with lld
+sudo rm -rf /usr/bin/cc /usr/bin/c++ /usr/bin/ld
+
 sudo update-alternatives --install /usr/bin/cc cc /usr/bin/gcc 100
 sudo update-alternatives --install /usr/bin/cc cc /usr/bin/clang 50
 
@@ -16,5 +18,4 @@ sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/clang++ 50
 sudo update-alternatives --config cc
 sudo update-alternatives --config c++
 
-sudo rm -rf /usr/bin/ld
 sudo ln -sf /usr/bin/ld.lld /usr/bin/ld
