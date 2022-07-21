@@ -23,3 +23,7 @@ add ```nosmt=force``` in ```GRUB_CMDLINE_LINUX```
  on ```/etc/default/grub```
 
 run: ```grub2-mkconfig -o /boot/grub2/grub.cfg -o /boot/efi/EFI/fedora/grub.cfg```
+
+## dnf.conf
+
+add ````max_parallel_downloads=10``` to the end of the ```/etc/dnf/dnf.conf``` file.
