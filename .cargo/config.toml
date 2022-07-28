@@ -9,19 +9,18 @@ rustflags = [
   '-Ccodegen-units=1',
   '-Ctarget-cpu=native',
   '-Clinker-plugin-lto',
-  '-Clinker=ld.lld',
+  '-Clinker=clang',
+  '-Clink-arg=-fuse-ld=lld',
   '-Cembed-bitcode=yes',
 ]
-linker = '/usr/bin/clang'
+linker = 'clang'
 
 [env]
-RUSTFLAGS = "-Copt-level=3 -Ccodegen-units=1 -Ctarget-cpu=native -Clinker-plugin-lto -Clinker=ld.lld -Cembed-bitcode=yes"
-CC = "clang -O3 -flto -ffat-lto-objects -march=native"
-CXX = "clang++ -O3 -flto -ffat-lto-objects -march=native"
-LD = "ld.lld"
-CFLAGS = "-O3 -flto -ffat-lto-objects -march=native"
-CXXFLAGS = "-O3 -flto -ffat-lto-objects -march=native"
-LDFLAGS = "-fuse-ld=lld"
+CC = "clang"
+CXX = "clang++"
+LD = "lld"
+RUSTFLAGS="-Copt-level=3 -Ccodegen-units=1 -Ctarget-cpu=native -Clinker-plugin-lto -Clinker=clang -Clink-arg=-fuse-ld=lld -Cembed-bitcode=yes"
+RUSTCFLAGS = "-Copt-level=3 -Ccodegen-units=1 -Ctarget-cpu=native -Clinker-plugin-lto -Clinker=clang -Clink-arg=-fuse-ld=lld -Cembed-bitcode=yes"
 CARGO_PROFILE_RELEASE_CODEGEN_UNITS = "1"
 CARGO_PROFILE_RELEASE_DEBUG = "false"
 CARGO_PROFILE_RELEASE_DEBUG_ASSERTIONS = "false"
