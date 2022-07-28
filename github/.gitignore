@@ -3,7 +3,5 @@
 
 !.gitignore
 
-# Except:
-!alacritty
-!flutter
-!nerd-fonts
+# Except
+!.gitkeep

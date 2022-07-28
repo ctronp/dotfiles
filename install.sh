@@ -21,3 +21,17 @@ sudo update-alternatives --install /usr/bin/ld ld /usr/bin/ld/ld.lld 50
 sudo update-alternatives --config cc
 sudo update-alternatives --config c++
 sudo update-alternatives --config ld
+
+
+# clone repos
+
+printf "\n\ndownloading repos\n\n"
+
+cd $HOME/github
+
+git clone --single-branch -b master git@github.com:ctronp/alacritty.git &
+git clone --single-branch -b stable git@github.com:flutter/flutter.git &
+git clone --single-branch -b master git@github.com:ryanoasis/nerd-fonts.git &
+
+wait
+printf all repos has been downloaded
