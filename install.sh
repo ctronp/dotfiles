@@ -2,6 +2,12 @@
 
 set -xe
 
+cd
+
+if [[ ! -d $HOME/go ]]; then
+    mkdir go
+fi
+
 # minimal install packages
 sudo dnf install git clang lld binutils-gold gcc xclip binutils
 
