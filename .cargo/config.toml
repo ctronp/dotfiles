@@ -19,6 +19,7 @@ linker = 'clang'
 CC = "clang"
 CXX = "clang++"
 LD = "lld"
+LDFLAGS = "-fuse-ld=lld"
 RUSTFLAGS="-Copt-level=3 -Ccodegen-units=1 -Ctarget-cpu=native -Clinker-plugin-lto -Clinker=clang -Clink-arg=-fuse-ld=lld -Cembed-bitcode=yes"
 RUSTCFLAGS = "-Copt-level=3 -Ccodegen-units=1 -Ctarget-cpu=native -Clinker-plugin-lto -Clinker=clang -Clink-arg=-fuse-ld=lld -Cembed-bitcode=yes"
 CARGO_PROFILE_RELEASE_CODEGEN_UNITS = "1"
