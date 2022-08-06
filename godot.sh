@@ -1,8 +1,15 @@
 #!/bin/bash
 
-cd ~/godot
-
 set -xe
+
+printf "if you require stable, prefer downloading from steam\n\n"
+
+if [[ ! -f $HOME/godot ]]
+then 
+    git clone --single-branch -b master git@github.com:godotengine/godot.git godot
+fi
+
+cd ~/godot
 
 printf "
 module_mono_enable = \"yes\"

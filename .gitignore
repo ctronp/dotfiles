@@ -14,4 +14,5 @@
 !disable-smt-cloud.sh
 !godot.sh
 !install.sh
+!ue5.sh
 !README.md
