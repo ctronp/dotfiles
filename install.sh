@@ -9,7 +9,7 @@ if [[ ! -d $HOME/go ]]; then
 fi
 
 # minimal install packages
-sudo dnf install git clang lld binutils-gold gcc xclip binutils
+sudo dnf install git clang lld binutils-gold gcc xclip binutils python-devel
 
 # replace gcc with clang and ld with lld
 sudo rm -rf /usr/bin/cc /usr/bin/c++ /usr/bin/ld
