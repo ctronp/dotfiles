@@ -5,11 +5,11 @@ set -xe
 cd
 
 if [[ ! -d $HOME/go ]]; then
-    mkdir go
+	mkdir go
 fi
 
 # minimal install packages
-sudo dnf install git clang lld binutils-gold gcc xclip binutils python-devel
+sudo dnf install -y git clang lld binutils-gold gcc xclip binutils python-devel glib2-static shfmt
 
 # replace gcc with clang and ld with lld
 sudo rm -rf /usr/bin/cc /usr/bin/c++ /usr/bin/ld
@@ -31,7 +31,6 @@ sudo update-alternatives --install /usr/bin/ld ld /usr/bin/ld.bfd 25
 sudo update-alternatives --config cc
 sudo update-alternatives --config c++
 sudo update-alternatives --config ld
-
 
 # clone repos
 
