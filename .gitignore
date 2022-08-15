@@ -7,15 +7,8 @@
 # Except:
 !.cargo
 !.config
-!github
-!.profile
-!chrome_install.sh
-!disable-smt-cloud.sh
-!godot.sh
-!install.sh
-!ue5.sh
-!sdl2.sh
-!sfml.sh
 !fedora
+!github
 !scripts
+!.profile
 !README.md
