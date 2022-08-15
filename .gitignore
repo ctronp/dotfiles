@@ -8,7 +8,6 @@
 !.cargo
 !.config
 !github
-!.aliases
 !.profile
 !chrome_install.sh
 !disable-smt-cloud.sh
@@ -17,4 +16,6 @@
 !ue5.sh
 !sdl2.sh
 !sfml.sh
+!fedora
+!scripts
 !README.md
