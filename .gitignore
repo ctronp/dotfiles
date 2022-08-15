@@ -15,4 +15,6 @@
 !godot.sh
 !install.sh
 !ue5.sh
+!sdl2.sh
+!sfml.sh
 !README.md
