@@ -2,6 +2,8 @@
 
 set -xe
 
+cd
+
 printf "prefer downloading from https://www.unrealengine.com/en-US/linux if possible\n"
 
 if [[ ! -f $HOME/ue5 ]]
