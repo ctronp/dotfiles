@@ -12,9 +12,9 @@ first add the ssh to github then execute:
 git config --global init.defaultBranch main && \
 git config --global commit.gpgsign true && \
 git init && \
-git remote add origin git@github.com:ctronp/dotfilesFedora.git && \
-git pull --recurse-submodules origin main && \
-git submodule update --init --recursive
+git remote add origin git@github.com:ctronp/
+dotfiles.git && \
+git pull origin main
 ```
 
 ## Disable SMT
