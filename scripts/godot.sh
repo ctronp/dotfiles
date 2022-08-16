@@ -2,6 +2,8 @@
 
 set -xe
 
+cd
+
 printf "if you require stable, prefer downloading from steam\n\n"
 
 if [[ ! -f $HOME/godot ]]
