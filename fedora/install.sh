@@ -9,7 +9,7 @@ if [[ ! -d $HOME/go ]]; then
 fi
 
 # minimal install packages
-sudo dnf install -y git clang lld binutils-gold gcc xclip binutils python-devel glib2-static shfmt
+sudo dnf install -y git clang lld binutils-gold gcc xclip binutils python-devel glib2-static shfmt micro
 
 # replace gcc with clang and ld with lld
 sudo rm -rf /usr/bin/cc /usr/bin/c++ /usr/bin/ld
@@ -38,9 +38,17 @@ printf "\n\ndownloading repos\n\n"
 
 cd $HOME/github
 
-git clone --single-branch -b master git@github.com:ctronp/alacritty.git &
-git clone --single-branch -b stable git@github.com:flutter/flutter.git &
-git clone --single-branch -b master git@github.com:ryanoasis/nerd-fonts.git &
+if [[ ! -d alacritty ]]; then
+	git clone --single-branch -b master git@github.com:ctronp/alacritty.git &
+fi
+
+if [[ ! -d flutter ]]; then
+	git clone --single-branch -b stable git@github.com:flutter/flutter.git &
+fi
+
+if [[ ! -d nerd-fonts ]]; then
+	git clone --single-branch -b master git@github.com:ryanoasis/nerd-fonts.git &
+fi
 
 wait
 
