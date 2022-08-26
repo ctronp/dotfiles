@@ -9,7 +9,7 @@ if [[ ! -d $HOME/go ]]; then
 fi
 
 # minimal install packages
-sudo dnf install -y git clang lld binutils-gold gcc xclip binutils python-devel glib2-static shfmt micro
+sudo dnf install -y git clang lld binutils-gold gcc xclip binutils python-devel glib2-static shfmt micro cmake openssl openssl-devel
 
 # replace gcc with clang and ld with lld
 sudo rm -rf /usr/bin/cc /usr/bin/c++ /usr/bin/ld
@@ -52,4 +52,4 @@ fi
 
 wait
 
-echo done
+echo "done"
