@@ -7,9 +7,12 @@ cd
 if [[ ! -d $HOME/go ]]; then
 	mkdir go
 fi
+if [[ ! -d $HOME/jdk ]]; then
+	mkdir jdk
+fi
 
 # minimal install packages
-sudo dnf install -y git clang lld binutils-gold gcc binutils python-devel glib2-static shfmt micro cmake openssl openssl-devel libEGL-devel wl-clipboard autocorr-es
+sudo dnf install -y git clang clang-tools-extra lld binutils-gold gcc binutils python-devel glib2-static shfmt micro cmake openssl openssl-devel libEGL-devel wl-clipboard autocorr-es
 
 # replace gcc with clang and ld with lld
 sudo rm -rf /usr/bin/cc /usr/bin/c++ /usr/bin/ld
