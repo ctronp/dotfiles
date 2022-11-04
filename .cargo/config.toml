@@ -8,20 +8,16 @@ rustflags = [
   '-Copt-level=3',
   '-Ccodegen-units=1',
   '-Ctarget-cpu=native',
-  '-Clinker-plugin-lto',
-  '-Clinker=clang',
-  '-Clink-arg=-fuse-ld=lld',
   '-Cembed-bitcode=yes',
 ]
-linker = 'clang'
 
 [env]
 CC = "clang"
 CXX = "clang++"
 LD = "lld"
 LDFLAGS = "-fuse-ld=lld"
-RUSTFLAGS="-Copt-level=3 -Ccodegen-units=1 -Ctarget-cpu=native -Clinker-plugin-lto -Clinker=clang -Clink-arg=-fuse-ld=lld -Cembed-bitcode=yes"
-RUSTCFLAGS = "-Copt-level=3 -Ccodegen-units=1 -Ctarget-cpu=native -Clinker-plugin-lto -Clinker=clang -Clink-arg=-fuse-ld=lld -Cembed-bitcode=yes"
+RUSTFLAGS="-Copt-level=3 -Ccodegen-units=1 -Ctarget-cpu=native -Cembed-bitcode=yes"
+RUSTCFLAGS = "-Copt-level=3 -Ccodegen-units=1 -Ctarget-cpu=native -Cembed-bitcode=yes"
 CARGO_PROFILE_RELEASE_CODEGEN_UNITS = "1"
 CARGO_PROFILE_RELEASE_DEBUG = "false"
 CARGO_PROFILE_RELEASE_DEBUG_ASSERTIONS = "false"
@@ -41,7 +37,6 @@ codegen-units = 512
 strip = true
 opt-level = 3
 debug = 0
-split-debuginfo = "..."
 debug-assertions = false
 overflow-checks = false
 lto = true
@@ -53,7 +48,6 @@ codegen-units = 1
 strip = true
 opt-level = 3
 debug = 0
-split-debuginfo = "..."
 debug-assertions = false
 overflow-checks = false
 incremental = false
