@@ -12,7 +12,7 @@ if [[ ! -d $HOME/jdk ]]; then
 fi
 
 # minimal install packages
-sudo dnf install -y git clang clang-tools-extra lld binutils-gold gcc binutils python-devel glib2-static shfmt micro cmake openssl openssl-devel libEGL-devel wl-clipboard autocorr-es aspell-es
+sudo dnf install -y git clang clang-tools-extra ninja-build lld binutils-gold gcc binutils python-devel glib2-static shfmt micro cmake openssl openssl-devel libEGL-devel wl-clipboard autocorr-es aspell-es 
 
 # replace gcc with clang and ld with lld
 sudo rm -rf /usr/bin/cc /usr/bin/c++ /usr/bin/ld
