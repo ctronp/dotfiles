@@ -50,7 +50,7 @@ if [[ ! -d flutter ]]; then
 fi
 
 if [[ ! -d nerd-fonts ]]; then
-	git clone --single-branch -b master git@github.com:ryanoasis/nerd-fonts.git &
+	git clone --depth 1 --single-branch -b master git@github.com:ryanoasis/nerd-fonts.git &
 fi
 
 wait
