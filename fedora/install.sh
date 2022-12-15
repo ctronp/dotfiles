@@ -42,11 +42,11 @@ printf "\n\ndownloading repos\n\n"
 cd $HOME/github
 
 if [[ ! -d alacritty ]]; then
-	git clone --single-branch -b master git@github.com:ctronp/alacritty.git &
+	git clone --depth 1 --single-branch -b master git@github.com:ctronp/alacritty.git &
 fi
 
 if [[ ! -d flutter ]]; then
-	git clone --single-branch -b stable git@github.com:flutter/flutter.git &
+	git clone --depth 1 --single-branch -b stable git@github.com:flutter/flutter.git &
 fi
 
 if [[ ! -d nerd-fonts ]]; then
