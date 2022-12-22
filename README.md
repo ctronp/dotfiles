@@ -21,13 +21,13 @@ git pull origin main
 add ```nosmt=force``` in ```GRUB_CMDLINE_LINUX```
  on ```/etc/default/grub```
 
-
 if you are on fedora:
+
 - run: ```grub2-mkconfig -o /boot/grub2/grub.cfg -o /boot/efi/EFI/fedora/grub.cfg```
 
 if you are on ubuntu:
-- run: ```sudo update-grub```
 
+- run: ```sudo update-grub```
 
 ## dnf.conf
 
