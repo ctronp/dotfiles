@@ -12,7 +12,10 @@ if [[ ! -d $HOME/jdk ]]; then
 fi
 
 # minimal install packages
-sudo dnf install -y git clang clang-tools-extra ninja-build lld binutils-gold gcc binutils python-devel glib2-static shfmt micro cmake openssl openssl-devel wl-clipboard autocorr-es aspell-es ranger
+sudo dnf install -y git clang clang-tools-extra ninja-build lld binutils-gold gcc binutils python-devel glib2-static shfmt micro cmake openssl openssl-devel wl-clipboard autocorr-es aspell-es ranger fish util-linux-user
+
+# set fish as de default terminal
+chsh -s /usr/bin/fish
 
 # replace gcc with clang and ld with lld
 sudo rm -rf /usr/bin/cc /usr/bin/c++ /usr/bin/ld
