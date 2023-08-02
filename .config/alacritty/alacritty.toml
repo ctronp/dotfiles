@@ -1,0 +1,28 @@
+[colors.cursor]
+cursor = "#a151d3"
+
+[cursor]
+style = "Beam"
+thickness = 0.27
+unfocused_hollow = false
+
+[font]
+size = 14
+
+[font.bold]
+family = "UbuntuMono Nerd Font"
+
+[font.italic]
+family = "UbuntuMono Nerd Font"
+
+[font.normal]
+family = "UbuntuMono Nerd Font"
+style = "Regular"
+
+[window]
+decorations = "None"
+opacity = 0.97
+
+[window.padding]
+x = 2
+y = 2
